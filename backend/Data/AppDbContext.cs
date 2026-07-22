@@ -7,7 +7,6 @@ namespace MeuTodo.Data;
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
        
-        // Definindo as tabelas do banco de dados no plural (Pessoas e Transacoes)
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Transacao> Transacoes { get; set; }
 

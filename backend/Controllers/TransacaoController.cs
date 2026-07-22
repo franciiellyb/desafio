@@ -31,16 +31,16 @@ namespace MeuTodo.Controllers
         [HttpPost]
         public async Task<IActionResult> Criar([FromBody] CriarTransacaoRequest request)
         {
-            // Validação básica de campos
+            // Validação 
             if (string.IsNullOrWhiteSpace(request.Descricao) || request.Valor <= 0)
                 return BadRequest("Dados da transação inválidos.");
 
-            // REGRA 1: O identificador da pessoa informado precisa existir no cadastro
+            // O identificador da pessoa informado precisa existir no cadastro
             var pessoa = await _context.Pessoas.FindAsync(request.PessoaId);
             if (pessoa == null)
                 return BadRequest("A pessoa informada não existe no cadastro.");
 
-            // REGRA 2: Se a pessoa for menor de idade (menor de 18 anos), apenas despesas poderão ser cadastradas
+            // Se a pessoa for menor de idade (menor de 18 anos), apenas despesas poderão ser cadastradas
             if (pessoa.Idade < 18 && request.Tipo == TipoTransacao.Receita)
                 return BadRequest("Menores de idade só podem cadastrar transações do tipo Despesa.");
 

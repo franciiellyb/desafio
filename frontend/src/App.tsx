@@ -96,9 +96,9 @@ export default function App() {
       
       <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>Controle de Gastos</h1>
 
-      {/* ========================================== */}
-      {/* CÓDIGO 2: CARDS DE RESUMO NO TOPO          */}
-      {/* ========================================== */}
+      
+      {/* CARDS DE RESUMO */}
+      
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
         <div style={{ background: '#fff', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
           <span style={{ color: '#64748b', fontSize: '0.875rem' }}>Total Receitas</span>
@@ -123,9 +123,9 @@ export default function App() {
       </div>
 
 
-      {/* ========================================== */}
-      {/* CÓDIGO 3A: CADASTRO E LISTA DE PESSOAS     */}
-      {/* ========================================== */}
+      
+      {/* CADASTRO E LISTA DE PESSOAS */}
+      
       <section style={{ background: '#fff', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
         <h2 style={{ marginTop: 0 }}>1. Cadastro de Pessoas</h2>
         
@@ -136,7 +136,7 @@ export default function App() {
         </form>
         {msgPessoa && <span style={{ color: '#16a34a', fontWeight: 'bold' }}>✅ Cadastro concluído!</span>}
 
-        {/* Lista Formata (Badges) */}
+        {/* Lista */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '1rem' }}>
           {pessoas.map(p => (
             <div key={p.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: '#f1f5f9', padding: '8px 12px', borderRadius: '20px' }}>
@@ -148,9 +148,9 @@ export default function App() {
       </section>
 
 
-      {/* ========================================== */}
-      {/* CÓDIGO 3B: TRANSAÇÕES COM TABELA           */}
-      {/* ========================================== */}
+      
+      {/* TRANSAÇÕES COM TABELA */}
+     
       <section style={{ background: '#fff', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
         <h2 style={{ marginTop: 0 }}>2. Cadastro de Transações</h2>
         
@@ -175,7 +175,7 @@ export default function App() {
         {msgTransacao && <span style={{ color: '#16a34a', fontWeight: 'bold', display: 'block', marginBottom: '15px' }}>✅ Lançamento concluído!</span>}
 
         <h3>Histórico Geral</h3>
-        {/* Nova Tabela de Transações */}
+        {/* Tabela de Transações */}
         <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: '8px', overflow: 'hidden' }}>
           <thead>
             <tr style={{ background: '#f8fafc', borderBottom: '1px solid #e2e8f0', textAlign: 'left' }}>
@@ -211,9 +211,9 @@ export default function App() {
         </table>
       </section>
 
-      {/* ========================================== */}
-      {/* SEÇÃO 3: TOTAIS (Opcional, mas mantido)    */}
-      {/* ========================================== */}
+      
+      {/* SEÇÃO 3: TOTAIS   */}
+      
       <section style={{ background: '#fff', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
         <h2 style={{ marginTop: 0 }}>3. Detalhamento por Pessoa</h2>
         <table style={{ width: '100%', textAlign: 'left', borderCollapse: 'collapse' }}>

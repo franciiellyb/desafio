@@ -8,7 +8,7 @@ export interface Transacao {
   id: string;
   descricao: string;
   valor: number;
-  tipo: 0 | 1; // 0 = Receita, 1 = Despesa (Alinhado ao Enum do C#)
+  tipo: 0 | 1; // 0 = Receita, 1 = Despesa
   pessoaId: string;
 }
 

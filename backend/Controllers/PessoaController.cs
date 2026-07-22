@@ -31,7 +31,6 @@ namespace MeuTodo.Controllers
         [HttpPost]
         public async Task<IActionResult> Criar([FromBody] CriarPessoaRequest request)
         {
-            // Validações básicas antes de salvar
             if (string.IsNullOrWhiteSpace(request.Nome))
                 return BadRequest("O nome é obrigatório.");
 
@@ -54,11 +53,11 @@ namespace MeuTodo.Controllers
             if (pessoa == null) 
                 return NotFound("Pessoa não encontrada.");
 
-            // ⚠️ REGRA CRÍTICA: Busca e apaga todas as transações dessa pessoa primeiro
+            // Busca e apaga todas as transações dessa pessoa primeiro
             var transacoesDaPessoa = _context.Transacoes.Where(t => t.PessoaId == id);
             _context.Transacoes.RemoveRange(transacoesDaPessoa);
 
-            // Agora sim, apaga a pessoa com segurança
+            // Em seguida, apaga a pessoa com segurança
             _context.Pessoas.Remove(pessoa);
             
             // Salva todas as remoções de uma vez só no banco de dados

@@ -22,24 +22,24 @@ namespace MeuTodo.Controllers
         [HttpGet]
         public async Task<IActionResult> GetTotals()
         {
-            // 1. Buscamos todas as pessoas e todas as transações do banco
+            // 1. Busca todas as pessoas e todas as transações do banco
             var people = await _context.Pessoas.ToListAsync();
             var transactions = await _context.Transacoes.ToListAsync();
 
             var peopleRows = new List<PersonTotalDto>();
 
-            // 2. Calculamos os valores individuais de cada pessoa
+            // 2. Calcula os valores individuais de cada pessoa
             foreach (var person in people)
             {
                 // Filtra as transações que pertencem a esta pessoa específica
                 var personTransactions = transactions.Where(t => t.PessoaId == person.Id).ToList();
 
-                // Soma as receitas (Tipo == 0 ou TipoTransacao.Receita)
+                // Soma as receitas
                 var totalReceipts = personTransactions
                     .Where(t => t.Tipo == TipoTransacao.Receita)
                     .Sum(t => t.Valor);
 
-                // Soma as despesas (Tipo == 1 ou TipoTransacao.Despesa)
+                // Soma as despesas 
                 var totalExpenses = personTransactions
                     .Where(t => t.Tipo == TipoTransacao.Despesa)
                     .Sum(t => t.Valor);
@@ -56,12 +56,12 @@ namespace MeuTodo.Controllers
                 ));
             }
 
-            // 3. Calculamos o Total Geral somando o resultado de todo mundo
+            // 3. Calcula o Total Geral somando o resultado de todo mundo
             var globalReceipts = peopleRows.Sum(p => p.TotalReceipts);
             var globalExpenses = peopleRows.Sum(p => p.TotalExpenses);
             var globalNetBalance = globalReceipts - globalExpenses;
 
-            // 4. Montamos a resposta final combinando a lista e os totais gerais
+            // 4. Monta a resposta final combinando a lista e os totais gerais
             var response = new TotalsReportResponse(
                 peopleRows,
                 globalReceipts,
