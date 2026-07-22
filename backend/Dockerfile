@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS development
+WORKDIR /app
+COPY . .
+RUN dotnet restore
+EXPOSE 80
+ENTRYPOINT ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:80"]

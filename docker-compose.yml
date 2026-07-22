@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: meutodo_backend
+    ports:
+      - "5000:80"
+    volumes:
+      - ./backend:/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  frontend:
+    build: ./frontend
+    container_name: meutodo_frontend
+    ports:
+      - "5173:5173" # <-- Mudamos de 3000:3000 para 5173:5173
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true

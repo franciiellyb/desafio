@@ -1,0 +1,6 @@
+# .NET (Backend)
+bin/
+obj/
+
+# Node.js (Frontend)
+node_modules/
