@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "frontend\\src\\style.css",
               "ToolTip": "C:\\Users\\User\\Downloads\\FATEC\\MeuTodo\\frontend\\src\\style.css",
               "RelativeToolTip": "frontend\\src\\style.css",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAgwDEBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAABRwAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-07-22T18:44:58.586Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "frontend\\src\\App.tsx",
               "ViewState": "AgIAAEQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-07-22T18:43:59.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:43:59.071Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "frontend\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-07-22T18:43:49.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:43:49.888Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "backend\\Controllers\\PessoaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T18:43:42.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:43:42.225Z"
             }
           ]
         }
