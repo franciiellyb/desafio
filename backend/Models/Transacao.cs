@@ -1,6 +1,6 @@
 using System;
 
-namespace MeuTodo.Models
+namespace SistemaControleGastos.Models
 {
     public enum TipoTransacao
     {

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MeuTodo.Models;
-using MeuTodo.Data;
+using SistemaControleGastos.Models;
+using SistemaControleGastos.Data;
 using System;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace MeuTodo.Controllers
+namespace SistemaControleGastos.Controllers
 {
     [ApiController]
     [Route("api/transacoes")]

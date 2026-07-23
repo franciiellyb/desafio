@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MeuTodo.Migrations
+namespace SistemaControleGastos.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreation : Migration

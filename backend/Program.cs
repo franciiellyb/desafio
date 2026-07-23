@@ -1,4 +1,4 @@
-using MeuTodo.Data;
+using SistemaControleGastos.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MeuTodo.Migrations
+namespace SistemaControleGastos.Migrations
 {
     /// <inheritdoc />
     public partial class AtualizarModelosParaGuid : Migration

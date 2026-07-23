@@ -1,7 +1,7 @@
-using MeuTodo.Models;
+using SistemaControleGastos.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace MeuTodo.Data;
+namespace SistemaControleGastos.Data;
 
     public class AppDbContext : DbContext
     {

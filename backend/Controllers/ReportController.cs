@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MeuTodo.Data;
-using MeuTodo.Models;
+using SistemaControleGastos.Data;
+using SistemaControleGastos.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MeuTodo.Controllers
+namespace SistemaControleGastos.Controllers
 {
     [ApiController]
     [Route("api/totals")] // Endereço da API: http://localhost:PORTA/api/totals

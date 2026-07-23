@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MeuTodo.Models;
+using SistemaControleGastos.Models;
 using System;
 using System.Threading.Tasks;
-using MeuTodo.Data;
+using SistemaControleGastos.Data;
 
-namespace MeuTodo.Controllers
+namespace SistemaControleGastos.Controllers
 {
     [ApiController]
     [Route("api/pessoas")] // Isso define que o endereço será: http://localhost:PORTA/api/pessoas
