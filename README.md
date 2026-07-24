@@ -1,13 +1,13 @@
- Sistema de Controle de Gastos
+# **Sistema de Controle de Gastos**
 
-# Tecnologias utilizadas:
+**Tecnologias utilizadas:**
 
 - **Back-end:** .NET (C#), ASP.NET Core Web API
 - **Banco de Dados:** SQLite com Entity Framework Core
 - **Front-end:** React com TypeScript
 - **Containerização:** Docker & Docker Compose
 
-#  **Funcionalidades**
+**Funcionalidades**
 
 Cadastro e Gerenciamento de Pessoas:
 - Criação, listagem e exclusão de pessoas.
