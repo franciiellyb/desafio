@@ -7,7 +7,7 @@
 - **Front-end:** React com TypeScript
 - **Containerização:** Docker & Docker Compose
 
- 📋 Regras de Negócio Implementadas
+  Regras de Negócio Implementadas
 
 Cadastro e Gerenciamento de Pessoas:
 - Criação, listagem e exclusão de pessoas.
@@ -16,10 +16,10 @@ Cadastro e Gerenciamento de Pessoas:
 
 Cadastro e Lançamento de Transações:
 - Lançamento de despesas e receitas vinculadas a uma pessoa.
-- **Validação de Maioridade:** Pessoas com idade inferior a 18 anos são impedidas de registrar lançamentos do tipo *Receita* (apenas *Despesa* é permitida).
+- Validação de Maioridade: Pessoas com idade inferior a 18 anos são impedidas de registrar lançamentos do tipo *Receita* (apenas *Despesa* é permitida).
 - Validação para garantir que a pessoa selecionada exista no sistema.
 
-**Consulta de Totais e Saldos:**
+Consulta de Totais e Saldos:
 - Resumo financeiro consolidado em cards (Total de Receitas, Total de Despesas e Saldo Geral).
 - Detalhamento por pessoa com saldo individual.
 
@@ -27,7 +27,7 @@ Cadastro e Lançamento de Transações:
 
 ---
 
- 🚀 Como Executar o Projeto
+ Como Executar o Projeto
 
  Opção 1: Utilizando Docker 
 
