@@ -1,18 +1,18 @@
  Sistema de Controle de Gastos
 
- Tecnologias utilizadas:
+# Tecnologias utilizadas:
 
 - **Back-end:** .NET (C#), ASP.NET Core Web API
 - **Banco de Dados:** SQLite com Entity Framework Core
 - **Front-end:** React com TypeScript
 - **Containerização:** Docker & Docker Compose
 
-  Regras de Negócio Implementadas
+#  **Funcionalidades**
 
 Cadastro e Gerenciamento de Pessoas:
 - Criação, listagem e exclusão de pessoas.
 - Identificador único gerado automaticamente (`Guid`).
-- **Exclusão em cascata:** Ao deletar uma pessoa, todas as suas transações vinculadas são apagadas automaticamente.
+- Exclusão em cascata: Ao deletar uma pessoa, todas as suas transações vinculadas são apagadas automaticamente.
 
 Cadastro e Lançamento de Transações:
 - Lançamento de despesas e receitas vinculadas a uma pessoa.
@@ -27,15 +27,15 @@ Consulta de Totais e Saldos:
 
 ---
 
- Como Executar o Projeto
+# **Como Executar o Projeto**
 
- Opção 1: Utilizando Docker 
+ **Opção 1: Utilizando Docker**
 
 Certifique-se de ter o Docker instalado e execute na raiz do projeto:
 
 docker-compose up --build
 
- Opção 2: Execução Manual
+ **Opção 2: Execução Manual**
 
 Back-end (.NET)
 cd backend
